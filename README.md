@@ -16,3 +16,5 @@
 #j'ai bientot fini uml jpe faire un pause
 
 #et grand py aussi fin j'ai compris quoi
+
+#j'ai rop hate de bosser ! et en meme temps japprendrai a faire des mats + des ia, pcque ca a l'air dur ^^
