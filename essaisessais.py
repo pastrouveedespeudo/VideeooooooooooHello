@@ -10,8 +10,8 @@ from cv2 import *
 import matplotlib.pyplot as plt
 import random
 from statistics import mean
-
-
+from operator import itemgetter
+from collections import OrderedDict
 
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
@@ -38,126 +38,48 @@ im = Image.open("10020_5.png")
 pix = im.load()
 
 b = pix[100,200]
-
-listeR = []
-listeV = []
-listeB = []
+#print(b)
 
 
-for i in range(20):
-    pixx = random.randint(0,im.size[0] -1)
-    pixy = random.randint(0,im.size[1] - 1)
-    a = pix[pixx,pixy]
-
-    listeR.append(a[0])
-    listeV.append(a[1])
-    listeB.append(a[2])
 
 
-okR = 0
-okV = 0
-okB = 0
+dico = {}
+for value in im.getdata(): # pas très joli mais compréhensible
+    if value in dico.keys():
+         dico[value] += 1
+    else:
+         dico[value] = 1
 
+
+
+liste_dico = []
+
+
+for i in dico.values():
+    liste_dico.append(i)
+
+
+
+liste_dico= sorted(liste_dico, reverse = True)
 
 c = 0
-
-while ok != True
-    
-    for i in listeR:
-        try:
-            if listeR[c+1] =< listeR[c] + 30 and listeR[c] >= listeR[c] - 30:
-                okR +=1
-        except:
-            pass
-        finally:
-            if okR == len(listeR):
-                break
-           
-    for i in listeV:
-        try:
-            elif listeV[c+1] =< listeV[c] + 30 and listeV[c] >= listeV[c] - 30:
-                okV +=1
-        except:
-            pass
-        finally:
-            if okV == len(listeV):
-                break
+for i in liste_dico:
+    print(i)
+    print([c for c,v in dico.items() if v==i])
+    if c == 30:
+        break
+    c+=1
 
    
-    for i in listeB:
-        try:
-            elif listeB[c+1] =< listeB[c] + 30 and listeB[c] >= listeB[c] - 30:
-                okB +=1
-        except:
-            pass
-        finally:
-            if okB == len(listeB):
-                break
-    okR = 0
-    okV = 0
-    okB = 0
 
+#ok de gros progres a faire pour les dico wouaw... j'ai rien compris
+#ok les lsites compréhension les maths
+#jsp qu'a la silli ils vont vite trouvé comment nous rendre immortel pcque la...
 
+#jviens de comprendre les profs avec leur de gros progres a faire merde
+#jme rendais pas compte 
 
-MB = mean(listeB)        
-  
-MV= mean(listeV)
-
-MR = mean(listeR)
-
-
-print(b)
-print(MR)
-print(MV)
-print(MB)
-
-
-
-
-#print(b,c,d)
-
-
-
-
-"""
-x = 0
-y = 0
-
-liste = []
-
-while True:
-    
-    img = pix[x,y]
-    x+=1
-    if x == im.width  - 1:
-        y+=1
-        x=0
-        
-    elif y == im.height - 1:
-        break
-    
-    if img[0] >= b - 30 or img[0] <= b + 30:
-        liste.append((x,y))
-
-    elif img[1] >= c - 30 or img[1] <= cb + 30:
-        liste.append((x,y))
-
-    elif img[2] >= d - 30 or img[2] <= d + 30:
-        liste.append((x,y))
-
-
-    
-
-
-    
-#print(liste)
-
-
-
-
-
-
-"""
+im = Image.open("10025_1.png")
 
 
 
@@ -169,7 +91,18 @@ while True:
 
 
 
-#c pas bien beau MAIS ca peut marcher ^^
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
