@@ -9,6 +9,8 @@
 
 #POSE LES SUR LA TABLE  bon dieu
 
+#et dans ma tete vraiment ? jdis bèèèèèllleuuuuuuuuuh quand jvois une bonasse ? ^^
+
 #mtn le but c de prendre la couleur de la tronche
 
 #verifie que ca marche.... on prend image de la gueule, on fixe un point au hasard
