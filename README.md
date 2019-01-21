@@ -1,5 +1,11 @@
 # VideeooooooooooHello
 
+#par contre j'ai trop peur qu'elle s'en prenne plein la gueule jcrois c'etait monica.... jsp sté pas manoune... ou sté sarah
+#hannnn
+
+
+
+
 
 #regle le probleme du gray                                                                                  oki
 
