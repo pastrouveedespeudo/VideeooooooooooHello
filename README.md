@@ -9,6 +9,10 @@
 
 #POSE LES SUR LA TABLE  bon dieu
 
+#enfete a chque fois que jles ai posé j'ai redoublé donc... et va finir tes tables connard
+
+#3 fois et 2 masters ^^
+
 #et dans ma tete vraiment ? jdis bèèèèèllleuuuuuuuuuh quand jvois une bonasse ? ^^
 
 #mtn le but c de prendre la couleur de la tronche
