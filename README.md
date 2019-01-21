@@ -1,7 +1,7 @@
 # VideeooooooooooHello
 
 
-#regle le probleme du gray oki
+#regle le probleme du gray                                                                                  oki
 
 #mtn le but c de prendre la couleur de la tronche
 
