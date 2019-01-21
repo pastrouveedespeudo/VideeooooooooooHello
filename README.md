@@ -3,6 +3,8 @@
 #par contre j'ai trop peur qu'elle s'en prenne plein la gueule jcrois c'etait monica.... jsp sté pas manoune... ou sté sarah
 #hannnn sarah la pute ! sté elle ! moni aurait jamais fais ca !
 
+#serieux j'ai dev mon empathie... sté horrible de les voir comme ca, moi j'ai juste mis des youtubeurs et boom leur manager
+#c les manageur la com qui ont vu ca... du coup ca a fait des malheureux... jarrivais plus abosser, jme disais wouaa qu'es tce que j'ai fais... c deja lh'eure ?^^
 
 
 
