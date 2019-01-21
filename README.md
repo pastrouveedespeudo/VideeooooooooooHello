@@ -23,7 +23,9 @@
 #mais ca t'as toute la vie ouf
 
 
+#comment on extrait le bordel jb pessimiste ? ben on a juste a dire: 
 
+#si pixel pas +- a 30 aors on fout tout en noir et on redessine l'image sur une autre image
 
 
 #verifie que ca marche.... on prend image de la gueule, on fixe un point au hasard
