@@ -1,21 +1,30 @@
 # VideeooooooooooHello
-#bouaaaaaa j'ai l'air perdu sur la video mec mais reveille toi nom de dieu
 
-#jme rend pas compte mais vraminet wouaaa des fois le type parle pas pendant 10 secondes mdr
 
-#et vraiment faut que jtravaille sur ca mais jdonne l'impression davoir plusieurs personalités
+#va falloir mais attend un peu, te reinscrire a fork (efface pas ca) attend le prochain projet
 
-#et les euuuuuuuuuuuh oh bordel MAIS SECOUE TOI MEC etfais le mec on dirait un gros soumis
-
-#POSE LES SUR LA TABLE  bon dieu
-
-#enfete a chque fois que jles ai posé j'ai redoublé donc... et va finir tes tables connard
-
-#3 fois et 2 masters ^^
-
-#et dans ma tete vraiment ? jdis bèèèèèllleuuuuuuuuuh quand jvois une bonasse ? ^^
 
 #mtn le but c de prendre la couleur de la tronche
+
+#--------> la j'en peux plus mais taleur, fias un serie de 20 pts sur la tronche
+
+#si pour les 15 c les memes a +=- 30 pixel (verifie si dois baisser ou peux monter la diff de pixel)
+
+#on garde ste couleur en faisant la moyenne
+
+#sinon on recommence
+
+#verifier que ca marche
+
+#CEPENDANT la lecture est deja a 6secondes... a la fin du programme la lecture sera d'une heure....
+
+#donc y'a un probleme et mon pc est rapide donc ca sera de la merde par contre ! la detection image et tout ca
+#mtn je connais les outils et ca c cool par contre tu vas devoir apprendre les maths appliqué au code
+#mais ca t'as toute la vie ouf
+
+
+
+
 
 #verifie que ca marche.... on prend image de la gueule, on fixe un point au hasard
 
