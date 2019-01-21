@@ -12,3 +12,7 @@
 #attention faut pas prendre obligatoirement le pts extreme gauche
 
 #y'a pts extreme haut, bas droite cherche ca
+
+#j'ai bientot fini uml jpe faire un pause
+
+#et grand py aussi fin j'ai compris quoi
