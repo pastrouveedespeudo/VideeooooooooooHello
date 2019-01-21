@@ -16,7 +16,7 @@
 
 #verifier que ca marche
 
-#CEPENDANT la lecture est deja a 6secondes... a la fin du programme la lecture sera d'une heure....
+#CEPENDANT la lecture est deja a 6secondes... a la fin du programme la lecture sera 30 heures....
 
 #donc y'a un probleme et mon pc est rapide donc ca sera de la merde par contre ! la detection image et tout ca
 #mtn je connais les outils et ca c cool par contre tu vas devoir apprendre les maths appliqué au code
