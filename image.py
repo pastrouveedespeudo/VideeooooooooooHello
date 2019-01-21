@@ -22,6 +22,7 @@ class image:
         self.name3 = str(self.i)+"_3.png"
         self.name4 = str(self.i)+"_4.png"
         self.name5 = str(self.i)+"_5.png"
+        self.name6 = str(self.i)+"_6.png"
         
         img = ImageGrab.grab().convert("LA") 
         self.image = img.save(self.name)
@@ -43,7 +44,7 @@ class image:
             roi_gray = gray[y:y+h, x:x+w]
             roi_color = img[y:y+h, x:x+w]
 
-            self.crop = img[y:h+y, x:w+x]
+            crop = img[y:h+y, x:w+x]
             
             cv2.imwrite(self.name5, crop)
 
@@ -53,9 +54,6 @@ class image:
         
         self.i = i
         
-        path = r"C:\Users\jeanbaptiste\video\{}".format(self.name)
-        path2 = r"C:\Users\jeanbaptiste\video\{}".format(self.name2)
-
         
         face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
         eye_cascade = cv2.CascadeClassifier('haarcascade_eye.xml')
@@ -65,7 +63,7 @@ class image:
 
         faces = face_cascade.detectMultiScale(gray, 1.3, 5)
         for (x,y,w,h) in faces:
-            cv2.rectangle(img,(x,y),(x+w,y+h),(255,0,0),2)
+            cv2.rectangle(img,(x,y),(x+w,y+h),(0,0,255),2)
             roi_gray = gray[y:y+h, x:x+w]
             roi_color = img[y:y+h, x:x+w]
             
@@ -73,24 +71,63 @@ class image:
             cv2.rectangle(img,(x-w,y+h),(x+w+w, y+h1), (0,0,255),2)#corps
 
 
-            cv2.rectangle(img,(x-w,y+h),(x, y+h1),(255,0,0),2)#corps gauche
+            cv2.rectangle(img,(x-w,y+h),(x, y+h1),(0,0,255),2)#corps gauche
             
-            cv2.rectangle(img,(x+w, y+h),(w+x+w, y+h1),(0,0,0),2)#corps droit
+            cv2.rectangle(img,(x+w, y+h),(w+x+w, y+h1),(0,0,255),2)#corps droit
 
 
 
             
             cv2.rectangle(img,(x,y),(x+int(round(w/2)), y+h),(0,0,255),2)#gauche tete
-            cv2.rectangle(img,(x+int(round(w/2)),y) ,(x+w, y+h),(255,200,0),2)#droite tete
+            cv2.rectangle(img,(x+int(round(w/2)),y) ,(x+w, y+h),(0,0,2550),2)#droite tete
 
 
 
-            cv2.rectangle(img,(x+x,y),(x+w, y+h),(0,255,0),2)#zone1 de tete
-            cv2.rectangle(img,(w,y),(x, y+h),(0,255,0),2)#zone2 de tete
+            cv2.rectangle(img,(x+x,y),(x+w, y+h),(0,0,255),2)#zone1 de tete
+            cv2.rectangle(img,(w,y),(x, y+h),(0,0,255),2)#zone2 de tete
             
             self.crop = img[y:h1 ,x-w:x+w+w]
 
             cv2.imwrite(self.name2, self.crop)
+
+    def cadrage_coul(self, i):
+        
+        self.i = i
+        
+        face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+        eye_cascade = cv2.CascadeClassifier('haarcascade_eye.xml')
+
+        img = cv2.imread(self.name1)
+        gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+
+        faces = face_cascade.detectMultiScale(gray, 1.3, 5)
+        for (x,y,w,h) in faces:
+            cv2.rectangle(img,(x,y),(x+w,y+h),(0,0,255),2)
+            roi_gray = gray[y:y+h, x:x+w]
+            roi_color = img[y:y+h, x:x+w]
+            
+            h1 = img.shape[1] - 1
+            cv2.rectangle(img,(x-w,y+h),(x+w+w, y+h1), (0,0,255),2)#corps
+
+
+            cv2.rectangle(img,(x-w,y+h),(x, y+h1),(0,0,255),2)#corps gauche
+            
+            cv2.rectangle(img,(x+w, y+h),(w+x+w, y+h1),(0,0,255),2)#corps droit
+
+
+
+            
+            cv2.rectangle(img,(x,y),(x+int(round(w/2)), y+h),(0,0,255),2)#gauche tete
+            cv2.rectangle(img,(x+int(round(w/2)),y) ,(x+w, y+h),(0,0,255),2)#droite tete
+
+
+
+            cv2.rectangle(img,(x+x,y),(x+w, y+h),(0,0,255),2)#zone1 de tete
+            cv2.rectangle(img,(w,y),(x, y+h),(0,0,255),2)#zone2 de tete
+            
+            self.crop = img[y:h1 ,x-w:x+w+w]
+
+            cv2.imwrite(self.name6, self.crop)
 
 
 
@@ -115,6 +152,7 @@ class image:
             shutil.move(self.name, r"C:\Users\jeanbaptiste\video\image")
             shutil.move(self.name3, r"C:\Users\jeanbaptiste\video\pts")
             shutil.move(self.name5, r"C:\Users\jeanbaptiste\video\tronche_coul")
+            shutil.move(self.name6, r"C:\Users\jeanbaptiste\video\crop_cool")
             
         except:
             pass
