@@ -9,6 +9,10 @@
 
 # FIXE LE PTS AU NIVEAU DES JOUES pas de barbes ou de sourciles
 
+#fais chier jutilise des outils je code pas la.... et j'ai utilisé mon joker douche ce matin FAIS CHIER
+
+#et j'ai plus de joker youtube, fin si mais riche, jeune mediteranée a tout prix, mais ca dure des heures...
+
 #et d'isoler la main, faire le truk cercle au centre, on prend les pts du cercle
 
 #donc normalement faut 5 pts sur le cercle ou 4 dans le pouce ou un cercle = poingt + pouce
