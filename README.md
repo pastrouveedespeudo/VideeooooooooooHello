@@ -1,5 +1,13 @@
 # VideeooooooooooHello
+#bouaaaaaa j'ai l'air perdu sur la video mec mais reveille toi nom de dieu
 
+#jme rend pas compte mais vraminet wouaaa des fois le type parle pas pendant 10 secondes mdr
+
+#et vraiment faut que jtravaille sur ca mais jdonne l'impression davoir plusieurs personalités
+
+#et les euuuuuuuuuuuh oh bordel MAIS SECOUE TOI MEC etfais le mec on dirait un gros soumis
+
+#POSE LES SUR LA TABLE  bon dieu
 
 #mtn le but c de prendre la couleur de la tronche
 
