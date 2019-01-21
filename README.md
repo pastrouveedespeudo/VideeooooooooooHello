@@ -1,7 +1,7 @@
 # VideeooooooooooHello
 
 
-#va falloir mais attend un peu, te reinscrire a fork (efface pas ca) attend le prochain projet
+#va falloir mais attend un peu, te reinscrire a fork (efface pas ca) attend le prochain projet, attend que ca se tasse
 
 
 #mtn le but c de prendre la couleur de la tronche
