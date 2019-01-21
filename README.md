@@ -8,6 +8,8 @@
 
 #--------> la j'en peux plus mais taleur, fias un serie de 20 pts sur la tronche
 
+#utilise la binarisation fdp tsssss verifie si tu peux augmenter la difference de pixel
+
 #si pour les 15 c les memes a +=- 30 pixel (verifie si dois baisser ou peux monter la diff de pixel)
 
 #on garde ste couleur en faisant la moyenne
