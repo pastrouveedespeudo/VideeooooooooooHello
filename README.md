@@ -13,6 +13,9 @@
 #atta frere, calme au pire t'en fou toi c toi et 7 c  toi mais sans etre toi au final, merde j'y avais pris gout aussi
 sté marrant aussi 
 
+#par conter youtube, sté pas pour ca, j'en pouvais plus deja, j'ai chié jpensais pas que leur managers regardaient bon go travail
+#bon va méditer de toute facon matte plus ni la tv ni youtube on sait quel type de connard t'es
+
 #ok ca marche mtn, faire ca MAIS avec tous les points je sais pas ce que ca donner mais pour l'instant ca donne des pts peau
 #si tu fais ca ptetre tu pourras dessiner la main ou extraire de l'image la main selon les formes
 #comme pour le mec et les echographies....
