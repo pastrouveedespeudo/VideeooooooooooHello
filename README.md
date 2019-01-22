@@ -13,6 +13,14 @@
 
 #NE la prend pas en photo ^^ quoi que ca irait bien comme photo de profil en vrai
 
+#en vrai pour quils soit sympa faut que jmeurs et la ils seront tous ouais sté un mec cool
+
+#soit que je fasse un truk de magnifique, j'ai pas envie de crever y'a bientot game of throne et sillicon valley
+
+#et le truk magnifique mec... tarrive meme pas a IDENTIFIER UNE PUTIN DE PHOTO donc faut bosser, travailler et apprendre et comprendre
+
+#jarrive enfin a faire 5 resserrage avec le truk a pec le chat me matte avec ces grand yeux ouvert quand je suis torse nue dvant lui donc
+
 #fais chier jutilise des outils je code pas la.... et j'ai utilisé mon joker douche ce matin FAIS CHIER
 
 #et j'ai plus de joker youtube, fin si mais riche, jeune mediteranée a tout prix, mais ca dure des heures...
