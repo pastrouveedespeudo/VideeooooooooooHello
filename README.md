@@ -3,6 +3,10 @@
 
 #va falloir mais attend un peu, te reinscrire a fork (efface pas ca) attend le prochain projet, attend que ca se tasse
 
+#aussi pcc jcrois le regime poli en place les gens l'ont associé au symbole et je suis une personne a risque du coup
+#va falloir qu'il se dissocie de moi donc ca va faire mal fin jcrois
+
+#miser sur le truk magnifique ou la mise a mort... jprend pas le risque a leur place
 
 
 #ok ca marche mtn, faire ca MAIS avec tous les points je sais pas ce que ca donner mais pour l'instant ca donne des pts peau
