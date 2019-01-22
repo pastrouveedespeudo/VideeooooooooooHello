@@ -9,9 +9,9 @@
 #si tu fais ca ptetre tu pourras dessiner la main ou extraire de l'image la main selon les formes
 #comme pour le mec et les echographies....
 
+#les types croient que ma teub fait 12 centimetres ^^ sté dans un film mais ca m'arrange davoir troqué ca contre ca ^^
 
-
-# FIXE LE PTS AU NIVEAU DES JOUES pas de barbes ou de sourciles
+#NE la prend pas en photo ^^ quoi que ca irait bien comme photo de profil en vrai
 
 #fais chier jutilise des outils je code pas la.... et j'ai utilisé mon joker douche ce matin FAIS CHIER
 
