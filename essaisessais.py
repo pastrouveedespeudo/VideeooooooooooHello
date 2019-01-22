@@ -51,10 +51,7 @@ print("oui")
 
 liste_dico = []
 for i in dico.values():
-    if i == [(0,0,255)]:                    
-        pass
-    else:
-        liste_dico.append(i)
+    liste_dico.append(i)
     
 liste_dico= sorted(liste_dico, reverse = True)
 
@@ -64,23 +61,24 @@ c = 0
 liste_couleur = []
 
 for i in liste_dico:
-    liste_couleur.append([c for c,v in dico.items() if v==i])
+    if [c for c,v in dico.items() if v==i] == [(0, 0, 255)]:
+        c-=1
+    elif [c for c,v in dico.items() if v==i] != [(0, 0, 255)]:
+        liste_couleur.append([c for c,v in dico.items() if v==i])
     c+=1
     if c == 16:
         break
-
-
-
-
-
     
+
+
+print(liste_couleur)
 
 
 im = cv2.imread("10025_6.png")
 
 #ouille lui on voit qu'il fait de grosse journée ^^
-#ouais bah...
-#bordel que c moche ^^
+#voit si ca marche sur differente personne mtn
+#jose pas...
 
 for x in range(im.shape[0]):
     for y in range(im.shape[1]):
@@ -106,14 +104,6 @@ for x in range(im.shape[0]):
             im[x,y] = [0,0,0]
         
 
-
-
-
-            
-        
-
-       
-    
 
 
 
