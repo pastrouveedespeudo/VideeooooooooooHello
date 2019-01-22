@@ -12,6 +12,8 @@ import random
 from statistics import mean
 from operator import itemgetter
 from collections import OrderedDict
+import numpy as np
+
 
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
@@ -44,7 +46,7 @@ b = pix[100,200]
 
 
 dico = {}
-for value in im.getdata(): # pas très joli mais compréhensible
+for value in im.getdata():
     if value in dico.keys():
          dico[value] += 1
     else:
@@ -53,41 +55,55 @@ for value in im.getdata(): # pas très joli mais compréhensible
 
 
 liste_dico = []
-
-
 for i in dico.values():
     liste_dico.append(i)
-
-
-
+    
 liste_dico= sorted(liste_dico, reverse = True)
 
+
+
 c = 0
+liste_couleur = []
 for i in liste_dico:
-    print(i)
-    print([c for c,v in dico.items() if v==i])
-    if c == 30:
+    liste_couleur.append([c for c,v in dico.items() if v==i])
+    if i < 100:
         break
-    c+=1
 
-   
+print(liste_couleur)
 
-#ok de gros progres a faire pour les dico wouaw... j'ai rien compris
-#ok les lsites compréhension les maths
-#jsp qu'a la silli ils vont vite trouvé comment nous rendre immortel pcque la...
+im = cv2.imread("10020_5.png")
 
-#jviens de comprendre les profs avec leur de gros progres a faire merde
-#jme rendais pas compte 
-
-im = Image.open("10025_1.png")
+#im[200:300, 50] = [255,255,255]
 
 
+for x in range(im.shape[0]):
+    for y in range(im.shape[1]):
 
-
+        if im[x,y][0] != 0 and im[x,y][1] != 0 and im[x,y][2] != 0:
+            im[x,y] = [0,0,255]
+        
 
 
 
 
+            
+        
+
+       
+    
+
+#apres 100 000 0 00 0 00 tentatives avec du couleur peau avec du noir ca marche ouf
+
+#for j in range(im.shape[1]):
+#    print(j)
+    
+cv2.imshow("jojo.png", im)
+
+
+
+
+        
+ 
 
 
 
