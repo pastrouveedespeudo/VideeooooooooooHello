@@ -8,6 +8,10 @@
 
 #miser sur le truk magnifique ou la mise a mort... jprend pas le risque a leur place
 
+#jai compris! de quoi tu t'en branle en vrai ? y'a 7 et toi, en vrai c pas contre moi et merde trop tard pour penser comme ca
+
+#atta frere, calme au pire t'en fou toi c toi et 7 c  toi mais sans etre toi au final, merde j'y avais pris gout aussi
+sté marrant aussi 
 
 #ok ca marche mtn, faire ca MAIS avec tous les points je sais pas ce que ca donner mais pour l'instant ca donne des pts peau
 #si tu fais ca ptetre tu pourras dessiner la main ou extraire de l'image la main selon les formes
