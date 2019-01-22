@@ -3,9 +3,8 @@
 
 #va falloir mais attend un peu, te reinscrire a fork (efface pas ca) attend le prochain projet, attend que ca se tasse
 
-#ok javais pas vu je cité un putin de film et mtn j'ai troqué ^^
-
-#pue contre ma teub ca me va ^^
+#tu veux faireune ia qui parle? 
+#alors fini ton remplissage de table avant connard
 
 #mtn le but c de prendre la couleur de la tronche
 
