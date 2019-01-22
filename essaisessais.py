@@ -51,7 +51,10 @@ print("oui")
 
 liste_dico = []
 for i in dico.values():
-    liste_dico.append(i)
+    if i == [(0,0,255)]:                    
+        pass
+    else:
+        liste_dico.append(i)
     
 liste_dico= sorted(liste_dico, reverse = True)
 
