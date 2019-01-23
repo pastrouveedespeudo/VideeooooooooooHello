@@ -6,7 +6,7 @@ import time
 class main:
 
     def lecture(self):
-        lecture.play(self,"video6.mp4")
+        lecture.play(self,"video4.mp4")
 
 
     def capture(self):
@@ -23,16 +23,19 @@ class main:
                 image.transforme_image(self)
             except:
                 pass
-            #image.matches(self)
-            #image.ensemble_match(self)
             time.sleep(5)
             i+=1
 
-            
+    def traitement(self):
         
+        traitement_image.recup_couleur(self)
+        traitement_image.recupe_peau(self)
+        traitement_image.contour1(self)
+        traitement_image.nettoyage(self)
+        traitement_image.contour2(self)
+        #image.matches(self)
 
-
-
+    
 
 
 
@@ -49,14 +52,16 @@ if __name__ == "__main__":
 
     yo = main()
 
-    t2 = threading.Thread(target = yo.capture)
+    
 
     t1 = threading.Thread(target = yo.lecture)
-
+    t2 = threading.Thread(target = yo.capture)
+    t3 = threading.Thread(target = yo.traitement)
 
     
     t1.start()
     t2.start()
+    t3.start()
 
   
 
