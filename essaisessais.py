@@ -77,9 +77,8 @@ print(liste_couleur)
 im = cv2.imread("10025_6.png")
 
 #ouille lui on voit qu'il fait de grosse journée ^^
-#voit si ca marche sur differente personne mtn
-#jose pas...
 
+    
 for x in range(im.shape[0]):
     for y in range(im.shape[1]):
         
@@ -104,66 +103,57 @@ for x in range(im.shape[0]):
             im[x,y] = [0,0,0]
         
 
-
-
-
-#for j in range(im.shape[1]):
-#    print(j)
     
+cv2.imwrite("jojo.png", im)
 cv2.imshow("jojo.png", im)
 
 
+img = cv2.imread("jojo.png")
+imgray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+
+
+ret,thresh = cv2.threshold(imgray,127,255,0)
+img2, contours, hierarchy = cv2.findContours(thresh,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
+cv2.drawContours (img, contours, -1, (0,255,0), 20)
+
+
+cv2.imshow('img',img)
+cv2.imwrite("ya.png",img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+
+im = cv2.imread("ya.png")
+for x in range(im.shape[0]):
+    for y in range(im.shape[1]):
+        if im[x,y][0] != 0 and im[x,y][1] != 255 and im[x,y][2] != 0:
+            im[x,y] = [0,0,0]
+
+cv2.imshow("eaz.png",im)
+
+
+#oki on deux jolies doigts mtn mais voir si avec une main ca se rejoins pas et alors
+#baisser le contour
 
 
 
 
-
-def only_tete_sans_cheveux(self):
-    img = cv2.imread('[601 126 289 289].png')
-
-
-    mask = np.zeros(img.shape[:2],np.uint8)
-
-    bgdModel = np.zeros((1,65),np.float64)
-    fgdModel = np.zeros((1,65),np.float64)
-
-    rect = (50,50,450,290)
-    cv2.grabCut(img,mask,rect,bgdModel,fgdModel,5,cv2.GC_INIT_WITH_RECT)
-
-    mask2 = np.where((mask==2)|(mask==0),0,1).astype('uint8')
-    img = img*mask2[:,:,np.newaxis]
-
-    plt.imshow(img),plt.colorbar(),plt.show()
-
-
-
-
-
-def countour(self):
-    img = cv2.imread("10025_6.png")
-    imgray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-
-
-    ret,thresh = cv2.threshold(imgray,127,255,0)
-    img2, contours, hierarchy = cv2.findContours(thresh,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
-    cv2.drawContours (img, contours, -1, (0,255,0), 3)
-
-
-    cv2.imshow('img',img)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
-
-
-#1-extraire le corps
-#2-extraire les couleurs de la peau de la tete
-#3-faire la fonction
-#4-find coutour
 #5-apres ben j'en sais rien putin oublie pas t'as le truk pts centré round main faut extraire LA MAIN    
  
 
 
+def countour_cas_ou():
+        # read image to array
+    im = array(Image.open('ya.png').convert('L'))
 
+    # create a new figure
+    figure()
 
+    # show contours with origin upper left corner
+    contour(im, origin='image')
+    axis('equal')
+
+    plt.show()
 
 
 
