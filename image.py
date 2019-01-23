@@ -30,7 +30,7 @@ class image:
         self.image1 = img1.save(self.name1)
 
         
-    def peau(self):
+    def figure(self):
 
         
         face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
@@ -128,65 +128,6 @@ class image:
             self.crop = img[y:h1 ,x-w:x+w+w]
 
             cv2.imwrite(self.name6, self.crop)
-
-    def detection_couleur_figure(self):
-        im = Image.open("10020_5.png")
-        pix = im.load()
-
-        a = pix[100,14]
-        print(a)
-        b = a[0]
-        c = a[1]
-        d = a[2]
-
-        print(b,c,d)
-
-        x = 0
-        y = 0
-
-        liste = []
-
-        while True:
-            
-            img = pix[x,y]
-            x+=1
-            if x == im.width  - 1:
-                y+=1
-                x=0
-                
-            elif y == im.height - 1:
-                break
-            
-            if img[0] >= b - 30 or img[0] <= b + 30:
-                liste.append((x,y))
-
-            elif img[1] >= c - 30 or img[1] <= cb + 30:
-                liste.append((x,y))
-
-            elif img[2] >= d - 30 or img[2] <= d + 30:
-                liste.append((x,y))
-
-
-            
-
-
-            
-        print(liste)
-
-
-
-
-
-
-
-
-    def extraction_main(self):
-        pass
-
-
-
-
-
 
 
     def transforme_image(self):
