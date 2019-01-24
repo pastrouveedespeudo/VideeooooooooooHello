@@ -1,9 +1,13 @@
 # VideeooooooooooHello
 
 
-#meeeeeeeeerde j'ai comrpis jcrois, j'ai juste a lui montrer des passage de video de mec content et ensuite elle dira il est content car
+#ok au pire je partierai pas de tres loin s'il explose
 
-#retient ca
+#fin de la premeire partie, mais corriger bug, et theoriquement ca marche sauf qu'il faut que je demande
+
+#pour les data a chai pas qui donc theoriquement ca marche
+
+#faire la tete penché mtn et redresse ta teté aussi
 
 #bon on s'en fou, continue, c que ton 6eme mois tu paufinera apres, avant de rouler sans les mains ...jtrouve pas de émtaphore
 
