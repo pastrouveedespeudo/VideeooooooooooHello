@@ -22,7 +22,28 @@ class main:
             image.transforme_image(self)
             time.sleep(5)
             i+=1
-                        
+
+
+    def recup_for_match(self):
+        i = 9000
+        while True:
+            traitement_image.recup_couleur(self)
+            traitement.recupe_peau(self)
+            traitement.contour1(self)
+            traitement.nettoyage(self)
+            traitement.contour2(self, i)
+            i+=1
+
+
+
+    def capture_mouvement(self):
+        a = True
+        i = 6000
+        while a:
+            
+            image.capture_temps_reel(self, i)
+            i+=1
+    
     def matching(self):
         pass
 
@@ -52,13 +73,18 @@ if __name__ == "__main__":
     t1 = threading.Thread(target = yo.lecture)
    
     t2 = threading.Thread(target = yo.capture)
- 
-    t3 = threading.Thread(target = yo.matching)
 
+    t3 = threading.Thread(target = yo.recup_for_match)
+
+    t4 = threading.Thread(target = yo.matching)
+
+    t5 = threading.Thread(target = yo.capture_mouvement)
 
     t1.start()
     t2.start()
     t3.start()
+    t4.start()
+    t5.start()
  
   
   
