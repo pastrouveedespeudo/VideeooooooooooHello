@@ -1,6 +1,12 @@
 # VideeooooooooooHello
 
 
+#meeeeeeeeerde j'ai comrpis jcrois, j'ai juste a lui montrer des passage de video de mec content et ensuite elle dira il est content car
+
+#retient ca
+
+#bon on s'en fou, continue, c que ton 6eme mois tu paufinera apres, avant de rouler sans les mains ...jtrouve pas de émtaphore
+
 #plus qu'a prendre des image
 
 #faire fonction tete gauche droite
