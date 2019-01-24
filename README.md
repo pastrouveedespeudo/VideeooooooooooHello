@@ -1,9 +1,8 @@
 # VideeooooooooooHello
 
 
-#mettre une liste pas dans la classe, et faire la difference entre les pts, avant derniere, derniere avant derniere derniere a ok
+#gros teubé, t'as juste a prendre tous les pts de la tete !!!!!! pcque image ca lui gratouille pil poil au pixel 50x
 
-#et euh essais envec d'autre image... mais au pire on s'e nfou ca marche pour une, j'ai reussi a le faire pour une image 
 
 #plus qu'a prendre des image
 
