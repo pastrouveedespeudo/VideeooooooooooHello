@@ -1,11 +1,9 @@
 # VideeooooooooooHello
 
 
-#reflechis pour la tete penché, la c'est harchi nul en vrai ^^ le mec peut se decaller a droite a mais attend ! on prend
+#mettre une liste pas dans la classe, et faire la difference entre les pts, avant derniere, derniere avant derniere derniere a ok
 
-#que la tete alors !!! meme s'il se decalle le cadre le suit !
-
-#bon on s'en fou, continue, c que ton 6eme mois tu paufinera apres, avant de rouler sans les mains ...jtrouve pas de émtaphore
+#et euh essais envec d'autre image... mais au pire on s'e nfou ca marche pour une, j'ai reussi a le faire pour une image 
 
 #plus qu'a prendre des image
 
