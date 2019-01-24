@@ -26,3 +26,7 @@
 #ce week ca va barder mais avant js ! 
 
 #et finiiii et ca prendra pas 3h avec les thrad mais ca risque de faire exploser mon pc
+
+#mais c de la merde, le type tu lui parle irl y va pas attendre 10 plombes que ca lui dise...
+
+#pas grave faut au moins que ca marche^^
