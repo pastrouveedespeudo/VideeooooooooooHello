@@ -31,9 +31,7 @@ class image:
         
         img1 = ImageGrab.grab()
         self.image1 = img1.save(self.name1)
-        
-
-
+        print(self.name1)
 
         
     def figure(self):
@@ -41,7 +39,8 @@ class image:
         
         self.name5 = str(self.i)+"_5.png"
         face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
-        
+        print(self.name1)
+        self.name1 = str(self.i)+"_1.png"
         img = cv2.imread(self.name1)
         
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -127,6 +126,22 @@ class image:
 
         cv2.imwrite(self.name6, img)
 
+
+
+
+        
+    def transforme_image(self):
+        
+        
+        image_pts = cv2.imread(self.name2, 0)
+        edges = cv2.Canny(image_pts,100,200)
+        plt.subplot(122),plt.imshow(edges,cmap = 'gray')
+        plt.title('Edge Image'), plt.xticks([]), plt.yticks([])
+    
+        cv2.imwrite(self.name3, edges)
+
+
+
         fichier.deplacer(self, r"C:\Users\jeanbaptiste\video",
                          self.name, r"C:\Users\jeanbaptiste\video\image")
         
@@ -141,38 +156,9 @@ class image:
                         
         fichier.deplacer(self, r"C:\Users\jeanbaptiste\video",
                          self.name6,  r"C:\Users\jeanbaptiste\video\crop_cool")
-
-
         
-    def transforme_image(self):
-        
-        
-        image_pts = cv2.imread(self.name2,0)
-        edges = cv2.Canny(image_pts,100,200)
-        plt.subplot(122),plt.imshow(edges,cmap = 'gray')
-        plt.title('Edge Image'), plt.xticks([]), plt.yticks([])
-    
-        cv2.imwrite(self.name3, edges)
-
-
-
-        path = r"C:\Users\jeanbaptiste\video\{}".format(self.name)
-        path2 = r"C:\Users\jeanbaptiste\video\{}".format(self.name2)
-
-        try:
-
-         
-            shutil.move(self.name3, r"C:\Users\jeanbaptiste\video\pts")
-            shutil.move(self.name5, r"C:\Users\jeanbaptiste\video\tronche_coul")
-
-            
-        except:
-            pass
-
-
-
-
-
+        fichier.deplacer(self, r"C:\Users\jeanbaptiste\video",
+                        self.name3, r"C:\Users\jeanbaptiste\video\pts")
 
 
 
