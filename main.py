@@ -32,6 +32,8 @@ class main:
             traitement.contour1(self)
             traitement.nettoyage(self)
             traitement.contour2(self, i)
+            match.match_pouce(self, r"C:\Users\jeanbaptiste\video\pousse_pas_mélange2",
+                r"C:\Users\jeanbaptiste\video\match")
             i+=1
 
 
@@ -44,8 +46,8 @@ class main:
             image.capture_temps_reel(self, i)
             i+=1
     
-    def matching(self):
-        pass
+
+
 
     def tete(self):
         pass
@@ -76,14 +78,14 @@ if __name__ == "__main__":
 
     t3 = threading.Thread(target = yo.recup_for_match)
 
-    t4 = threading.Thread(target = yo.matching)
+
 
     t5 = threading.Thread(target = yo.capture_mouvement)
 
     t1.start()
     t2.start()
     t3.start()
-    t4.start()
+
     t5.start()
  
   
