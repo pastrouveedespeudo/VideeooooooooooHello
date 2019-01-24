@@ -1,7 +1,6 @@
 from PIL import ImageGrab
 from PIL import *
 from PIL import Image
-from outils_image import *
 import time
 import shutil
 import os
@@ -58,31 +57,29 @@ class traitement_image:
 
     def recupe_peau(self):
         
-        
-
         for x in range(self.im.shape[0]):
             for y in range(self.im.shape[1]):
             
-            if im[x,y][0] != self.liste_couleur[0][0][0] and im[x,y][1] != self.liste_couleur[0][0][1] and im[x,y][2] != self.liste_couleur[0][0][2] and\
-               im[x,y][0] != self.liste_couleur[1][0][0] and im[x,y][1] != self.liste_couleur[1][0][1] and im[x,y][2] != self.liste_couleur[1][0][2] and\
-               im[x,y][0] != self.liste_couleur[2][0][0] and im[x,y][1] != self.liste_couleur[2][0][1] and im[x,y][2] != self.liste_couleur[2][0][2] and\
-               im[x,y][0] != self.liste_couleur[3][0][0] and im[x,y][1] != self.liste_couleur[3][0][1] and im[x,y][2] != self.liste_couleur[3][0][2] and\
-               im[x,y][0] != self.liste_couleur[4][0][0] and im[x,y][1] != self.liste_couleur[4][0][1] and im[x,y][2] != self.liste_couleur[4][0][2] and\
-               im[x,y][0] != self.liste_couleur[5][0][0] and im[x,y][1] != self.liste_couleur[5][0][1] and im[x,y][2] != self.liste_couleur[5][0][2] and\
-               im[x,y][0] != self.liste_couleur[6][0][0] and im[x,y][1] != self.liste_couleur[6][0][1] and im[x,y][2] != self.liste_couleur[6][0][2] and\
-               im[x,y][0] != self.liste_couleur[7][0][0] and im[x,y][1] != self.liste_couleur[7][0][1] and im[x,y][2] != self.liste_couleur[7][0][2] and\
-               im[x,y][0] != self.liste_couleur[8][0][0] and im[x,y][1] != self.liste_couleur[8][0][1] and im[x,y][2] != self.liste_couleur[8][0][2] and\
-               im[x,y][0] != self.liste_couleur[9][0][0] and im[x,y][1] != self.liste_couleur[9][0][1] and im[x,y][2] != self.liste_couleur[9][0][2] and\
-               im[x,y][0] != self.liste_couleur[10][0][0] and im[x,y][1] != self.liste_couleur[10][0][1] and im[x,y][2] != self.liste_couleur[10][0][2] and\
-               im[x,y][0] != self.liste_couleur[11][0][0] and im[x,y][1] != self.liste_couleur[11][0][1] and im[x,y][2] != self.liste_couleur[11][0][2] and\
-               im[x,y][0] != self.liste_couleur[12][0][0] and im[x,y][1] != self.liste_couleur[12][0][1] and im[x,y][2] != self.liste_couleur[12][0][2] and\
-               im[x,y][0] != self.liste_couleur[13][0][0] and im[x,y][1] != self.liste_couleur[13][0][1] and im[x,y][2] != self.liste_couleur[13][0][2] and\
-               im[x,y][0] != self.liste_couleur[14][0][0] and im[x,y][1] != self.liste_couleur[14][0][1] and im[x,y][2] != self.liste_couleur[14][0][2] and\
-               im[x,y][0] != self.liste_couleur[15][0][0] and im[x,y][1] != self.liste_couleur[15][0][1] and im[x,y][2] != self.liste_couleur[15][0][2]:
-               
-               
-                im[x,y] = [0,0,0]
-            
+                if im[x,y][0] != self.liste_couleur[0][0][0] and im[x,y][1] != self.liste_couleur[0][0][1] and im[x,y][2] != self.liste_couleur[0][0][2] and\
+                  im[x,y][0] != self.liste_couleur[1][0][0] and im[x,y][1] != self.liste_couleur[1][0][1] and im[x,y][2] != self.liste_couleur[1][0][2] and\
+                   im[x,y][0] != self.liste_couleur[2][0][0] and im[x,y][1] != self.liste_couleur[2][0][1] and im[x,y][2] != self.liste_couleur[2][0][2] and\
+                   im[x,y][0] != self.liste_couleur[3][0][0] and im[x,y][1] != self.liste_couleur[3][0][1] and im[x,y][2] != self.liste_couleur[3][0][2] and\
+                   im[x,y][0] != self.liste_couleur[4][0][0] and im[x,y][1] != self.liste_couleur[4][0][1] and im[x,y][2] != self.liste_couleur[4][0][2] and\
+                   im[x,y][0] != self.liste_couleur[5][0][0] and im[x,y][1] != self.liste_couleur[5][0][1] and im[x,y][2] != self.liste_couleur[5][0][2] and\
+                   im[x,y][0] != self.liste_couleur[6][0][0] and im[x,y][1] != self.liste_couleur[6][0][1] and im[x,y][2] != self.liste_couleur[6][0][2] and\
+                   im[x,y][0] != self.liste_couleur[7][0][0] and im[x,y][1] != self.liste_couleur[7][0][1] and im[x,y][2] != self.liste_couleur[7][0][2] and\
+                   im[x,y][0] != self.liste_couleur[8][0][0] and im[x,y][1] != self.liste_couleur[8][0][1] and im[x,y][2] != self.liste_couleur[8][0][2] and\
+                   im[x,y][0] != self.liste_couleur[9][0][0] and im[x,y][1] != self.liste_couleur[9][0][1] and im[x,y][2] != self.liste_couleur[9][0][2] and\
+                   im[x,y][0] != self.liste_couleur[10][0][0] and im[x,y][1] != self.liste_couleur[10][0][1] and im[x,y][2] != self.liste_couleur[10][0][2] and\
+                   im[x,y][0] != self.liste_couleur[11][0][0] and im[x,y][1] != self.liste_couleur[11][0][1] and im[x,y][2] != self.liste_couleur[11][0][2] and\
+                   im[x,y][0] != self.liste_couleur[12][0][0] and im[x,y][1] != self.liste_couleur[12][0][1] and im[x,y][2] != self.liste_couleur[12][0][2] and\
+                   im[x,y][0] != self.liste_couleur[13][0][0] and im[x,y][1] != self.liste_couleur[13][0][1] and im[x,y][2] != self.liste_couleur[13][0][2] and\
+                   im[x,y][0] != self.liste_couleur[14][0][0] and im[x,y][1] != self.liste_couleur[14][0][1] and im[x,y][2] != self.liste_couleur[14][0][2] and\
+                   im[x,y][0] != self.liste_couleur[15][0][0] and im[x,y][1] != self.liste_couleur[15][0][1] and im[x,y][2] != self.liste_couleur[15][0][2]:
+                   
+                   
+                    im[x,y] = [0,0,0]
+                
 
 
 
@@ -103,8 +100,9 @@ class traitement_image:
 
 
 
-    def countour2(self):
- 
+    def countour2(self, i):
+
+        self.i = i
         im = array(Image.open(self.im).convert('L'))
 
         # create a new figure
@@ -114,8 +112,8 @@ class traitement_image:
         contour(im, origin='image')
         axis('equal')
 
-        im.save("extraction.png",im)
-
+        im.save("extraction{}.png".format(i),im)
+        shutil.move("extraction{}.png".format(i), r"C:\Users\jeanbaptiste\video\match")
         
 
 
