@@ -16,21 +16,21 @@ class main:
         i = 1000
         while a:
             image.capture_ecran(self, i)
-            i+=1
+            image.figure(self)
+            image.cadrage(self)
+            image.cadrage_coul(self)
+            image.transforme_image(self)
             time.sleep(5)
-            
+            i+=1
+                        
+    def matching(self):
+        pass
 
-    def croping(self):
-        time.sleep(0.21)
-        image.figure(self)
-        image.cadrage(self)
-        image.cadrage_coul(self)
-
-        
-   
+    def tete(self):
+        pass
 
 
-    
+                
 
 
 
@@ -51,17 +51,15 @@ if __name__ == "__main__":
 
     t1 = threading.Thread(target = yo.lecture)
    
-
     t2 = threading.Thread(target = yo.capture)
-  
-
-        
-    t3 = threading.Thread(target = yo.croping)
+ 
+    t3 = threading.Thread(target = yo.matching)
 
 
     t1.start()
     t2.start()
     t3.start()
+ 
   
   
 
