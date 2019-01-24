@@ -1,13 +1,9 @@
 # VideeooooooooooHello
 
 
-#ok au pire je partierai pas de tres loin s'il explose
+#reflechis pour la tete penché, la c'est harchi nul en vrai ^^ le mec peut se decaller a droite a mais attend ! on prend
 
-#fin de la premeire partie, mais corriger bug, et theoriquement ca marche sauf qu'il faut que je demande
-
-#pour les data a chai pas qui donc theoriquement ca marche
-
-#faire la tete penché mtn et redresse ta teté aussi
+#que la tete alors !!! meme s'il se decalle le cadre le suit !
 
 #bon on s'en fou, continue, c que ton 6eme mois tu paufinera apres, avant de rouler sans les mains ...jtrouve pas de émtaphore
 
