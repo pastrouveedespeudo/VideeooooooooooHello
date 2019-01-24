@@ -13,7 +13,8 @@ import os
 
 
 class image:
-    
+
+        
     def capture_ecran(self, i):
 
         self.i = i
@@ -39,9 +40,8 @@ class image:
         
         self.name5 = str(self.i)+"_5.png"
         face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
-        print(self.name1)
-        self.name1 = str(self.i)+"_1.png"
-        img = cv2.imread(self.name1)
+
+        img = cv2.imread(r"C:\Users\jeanbaptiste\video\{}".format(self.name1))
         
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
@@ -61,8 +61,8 @@ class image:
         
         face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
         eye_cascade = cv2.CascadeClassifier('haarcascade_eye.xml')
-      
-        img = cv2.imread(self.name)
+        print(self.name)
+        img = cv2.imread(r"C:\Users\jeanbaptiste\video\{}".format(self.name))
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
         faces = face_cascade.detectMultiScale(gray, 1.3, 5)
@@ -99,7 +99,7 @@ class image:
         face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
         eye_cascade = cv2.CascadeClassifier('haarcascade_eye.xml')
 
-        img = cv2.imread(self.name1)
+        img = cv2.imread(r"C:\Users\jeanbaptiste\video\{}".format(self.name1))
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
         faces = face_cascade.detectMultiScale(gray, 1.3, 5)
@@ -164,12 +164,29 @@ class image:
 
 
 
+    def capture_temps_reel(self, i):
+
+        
+        self.i = i
+        self.names = str(self.i)+".png"
+        img = ImageGrab.grab()
+        self.image = img.save(self.names)
+
+        shutil.move(self.names, r"C:\Users\jeanbaptiste\video\irl")
 
 
+    def capture_tete_reel(self):
+        face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+        
+        img = cv2.imread(r"C:\Users\jeanbaptiste\video\{}".format(self.names))
+        gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
+        faces = face_cascade.detectMultiScale(gray, 1.3, 5)
+        for (x,y,w,h) in faces:
+            cv2.rectangle(img,(x,y),(x+w,y+h),(0,0,255),2)
+            roi_gray = gray[y:y+h, x:x+w]
+            roi_color = img[y:y+h, x:x+w]
 
-
-
-
+    #on y fou le traitement de couleur
 
         
