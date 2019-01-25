@@ -8,7 +8,13 @@
 #et que ca marche ou pas t'en fou faut juste que theoriquement ca marche x) theoriquement ^^
 
 
-#jammuse pas laaaa putinn jve coder pas reprendre le meme code a chaque fois en plus c pas le mien
+#par ca mfou les boules si javais commencé a coder au leiu de faire ca, ca faisais fuir tout le monde
+
+#et oh puté tu pensais qu'a ca, ca te fatiguais ta mere et sa te rendais sensible au jeu...
+
+#mais mentaliste jo jcrois etaiiiiiit troooooooooop classe et speicer ride aussi bouaaaa
+
+#et si bien ! en realité chui dingue et tout ca n'est qu'une illusion ok c l'heure pour toi frere
 
 #cluster paumette
   #dessiner un pts blanc
