@@ -7,6 +7,9 @@
 
 #et que ca marche ou pas t'en fou faut juste que theoriquement ca marche x) theoriquement ^^
 
+
+#jammuse pas laaaa putinn jve coder pas reprendre le meme code a chaque fois en plus c pas le mien
+
 #cluster paumette
   #dessiner un pts blanc
   #image apres on prendre le pts blanc 1 on fait un trait
