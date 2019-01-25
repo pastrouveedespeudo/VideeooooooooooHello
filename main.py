@@ -42,15 +42,27 @@ class main:
         a = True
         i = 6000
         while a:
-            
             image.capture_temps_reel(self, i)
+            image.capture_tete_reel(self)
             i+=1
     
 
 
 
     def tete(self):
-        pass
+        i = 150000
+        
+        while True:
+            irl_tete.capture_ecran(self, i)
+            irl_tete.crop_tete_irl(self)
+            irl_tete.recup_couleur(self)
+            irl_tete.recupe_peau(self)
+            irl_tete.contour1(self)
+            irl_tete.nettoyage(self)
+            irl_tete.countour2(self)
+            irl_tete.pts(self)
+            irl_tete.gauche_ou_droite(self)
+            
 
 
                 
