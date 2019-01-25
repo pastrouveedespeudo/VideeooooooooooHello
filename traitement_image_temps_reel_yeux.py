@@ -15,8 +15,10 @@ from collections import OrderedDict
 import numpy as np
 from matplotlib.pyplot import *
 import os
-
-
+import threading
+import time
+from PIL import Image
+from pylab import *
 
 class irl_yeux:
 
@@ -65,7 +67,7 @@ class irl_yeux:
         plt.subplot(122),plt.imshow(edges,cmap = 'gray')
         plt.title('Edge Image'), plt.xticks([]), plt.yticks([])
         cv2.imwrite("yoyo.png", image_pts)
-        
+        cv2.imshow("ezeza", image_pts)
 
 
         
@@ -77,48 +79,70 @@ class irl_yeux:
             for y in range(im.shape[1]):
              
 
-                if im[x,y][0] == 255 or im[x,y][0] >= 100 and im[x,y][1] == 255 or im[x,y][1] >= 100 and im[x,y][1] <= 255 or im[x,y][2] >= 100:
+                if im[x,y][0] == 255 or im[x,y][0] >= 150 and im[x,y][1] == 255 or im[x,y][1] >= 150 and im[x,y][1] <= 255 or im[x,y][2] >= 150:
                     pass
                 else:
                     im[x,y] = [255,255,255]
         cv2.imshow("couocu.png", im)
         cv2.imwrite("couocu.png", im)
 
+        im = cv2.imread("couocu.png")
+        gray = cv2.cvtColor(im, cv2.COLOR_BGR2GRAY)
+
+        
+        
 
 
+    def contour(self):
+        
+        im = array(Image.open('couocu.png').convert('L'))
 
+        figure()
+        
+        contour(im, levels=[245], colors='black', origin='image')
+        axis('equal')
 
+        
+        show()
 
 
     def recup_lum(self):
 
-        im = cv2.imread("couocu.png")
+        im = cv2.imread("yoyo.png")
         liste = []
         for x in range(im.shape[0]):
             for y in range(im.shape[1]):
-                liste.append((im[x,y]))
-                    
-        print(liste)
-        
+                if im[x,y][0] < 200 and im[x,y][1] < 200 and im[x,y][2] < 200:
+                    im[x,y] = [0,0,255]
 
-        cv2.imshow("couocu.png", im)
+        #cv2.imshow("couocu.png", im)
 
 
 
-
-        
 yo = irl_yeux()
 yo.position_yeux()
 yo.transforme_image()
 yo.yeux()
-
+yo.contour()
 yo.recup_lum()
 
 
 
 
+#contour permet davoir le pts lumineu en carré du coup juste a faire si x and x+1, y+1 x+2,y-2 ectt
+#retourne coordonée
 
+#MAIS ON PEUT PAS ENREGISTRER CE TRUK DE ou ca donne une image blanche
 
+#trouve comment extraire (on a un image pas totalement blanche (juste en haut) avec un ptit pts a l'inté...)
+
+#reesaie de faire si c-1:c+x == 255 oauis en gros les blanco davant quoi
+
+#on ajoute a la liste les prochaine valeur et des quya du blanco stop
+
+#ca ca marchait pas non plus ensuite fais comme pour la teté
+
+#ou faire l'extraction via le truk echographie mais chai pas comment on fait
 
 
 
