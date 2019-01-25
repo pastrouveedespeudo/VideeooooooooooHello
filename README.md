@@ -1,12 +1,11 @@
 # VideeooooooooooHello
 
 
-#gros teubé, t'as juste a prendre tous les pts de la tete !!!!!! pcque image ca lui gratouille pil poil au pixel 50x
+#les bug
 
+#tu reprends a chaque fois tes meme fonctions, alors yeux + paumettes ce soir connar
 
-#plus qu'a prendre des image
-
-#faire fonction tete gauche droite
+#et que ca marche ou pas t'en fou faut juste que theoriquement ca marche x) theoriquement ^^
 
 #cluster paumette
   #dessiner un pts blanc
