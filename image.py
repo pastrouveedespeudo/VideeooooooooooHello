@@ -176,9 +176,13 @@ class image:
 
 
     def capture_tete_reel(self):
+
+        os.chdir(r"C:\Users\jeanbaptiste\video\irl")
+        self.names2 = str(self.i)+"_2.png"
+        
         face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
         
-        img = cv2.imread(r"C:\Users\jeanbaptiste\video\{}".format(self.names))
+        img = cv2.imread(r"C:\Users\jeanbaptiste\video\irl\{}".format(self.names))
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
         faces = face_cascade.detectMultiScale(gray, 1.3, 5)
@@ -187,6 +191,17 @@ class image:
             roi_gray = gray[y:y+h, x:x+w]
             roi_color = img[y:y+h, x:x+w]
 
-    #on y fou le traitement de couleur
+        self.image = img.save(self.names2)
+        shutil.move(self.names2, r"C:\Users\jeanbaptiste\video\tete_irl")
+
+
+
+
+
+
+
+
+
+
 
         
