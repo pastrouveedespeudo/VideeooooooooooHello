@@ -1,6 +1,31 @@
-#tete/crane
+#tete/crane:
+#chauve = act ele fait tombé cheveu
+
+#haut attention ou se stiuer
+#derriere prise descision
+#front resolution prblme ou conflit relation social attention
+#a demain en gros (j'ai vu ca dans medium comment on peut matter ca
+#ca m'a grave mis mal et en meme temps j'ai grave flipé fin
+#tempe se souvenir oou je me rapelle
+
 
 #geste visage:
+#pouce tete je vais bien ou j'aime ce que j'ai entendu
+#sourcil changement d"idée
+#entre yeux quelque chose implicite
+#oreillle gauche dur a entendre j'ai pas compris
+#droit plusieurs signi
+#vers le bas j'entend
+#jfrai jamais tous ca c mort
+#des que j'ai vrmnt compris comment faire avec les pixels jarrete
+#ca me saoul un peu
+#d'une j'ai 10 000 images que jdois effacer... y'a aucun ou trop de match
+#et puis parait que notre perception doit etre limité tetre pour ca que
+#j'ai bien gerbé
+#sté pas de la cock ^^ j'en ai vu que dans narcos mdr et sté dla merde
+#sté des douilles putin
+#ca parle de mateub mais
+#ca commence a partir en couille la frere ^^
 
 #cou
 
