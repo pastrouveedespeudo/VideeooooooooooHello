@@ -116,21 +116,56 @@ class irl_yeux:
 
 
     def geometrie(self):
+        pass
+        #carre = {cid:(x,y), td:(x, x:nombrex), tdh:(nombrex:y +nombrey), tdy:(nombrex,nombrey-nombrex)}
+        #hexagone ={1: (x,y),
+         #          2:(x,(x:nombrex)),
+         #          3:((x:nombrex+1/2*nombrex,y:1/2*nombrey)),
+         #          4:((x+nombrex+1/2*nombrex,y:1/2*nombrey+nombrey))
+         #          5:((x:nombrex, y+2*nombrey)),
+          #         6:((x, y:2*nombrey)),
+          #         7:((x:-1/2*nombrex, 2*nombrey:2*nombrey - 1/2*nombrey))
+         #          8:((-1/2*nombrex, 2*nombrey - 1/2*nombrey - nombrey))
+          #         9:((-1/2*nombrex:x, 1/2*nombrey:y))
+#                   }
+#syntaxe
+
+    def no_bord_no_black(self):
         
-        carre = {cid:(x,y), td:(x, x:nombrex), tdh:(nombrex:y +nombrey), tdy:(nombrey:nombrex)}
-        hexagone ={1: (x,y),
-                   2:(x,x:nombrex),
-                   3:((x:nombrex+1/2*nombrex,y:1/2*nombrey)),
-                   4:((x+nombrex+1/2*nombrex,y:1/2*nombrey+nombrey))
-                   5:((x:nombrex, y+2*nombrey)),
-                   6:((x, y:2*nombrey)),
-                   7:((x:-1/2*nombrex, 2*nombrey:2*nombrey - 1/2*nombrey))
-                   8:((-1/2*nombrex, 2*nombrey - 1/2*nombrey - nombrey))
-                   9:((-1/2*nombrex:x, 1/2*nombrey:y))
-                   }
+        im = cv2.imread("couocu.png")
+        y = 0
+        for x in range(im.shape[0]):
+            for y in range(im.shape[1]):
+            
+                if im[x,y][0] == 255 and im[x,y][1] == 255 and im[x,y][2] == 255:
+                    y+=1
+                    x = 0
+                    break
+                else:
+                    im[x,y] = [0,0,0]
 
+        cv2.imshow("couocu.png", im)
+        cv2.imwrite("uu.png", im)
 
+        
+    def no_bord_no_black_gauche(self):
+        im = cv2.imread("uu.png")
 
+        y = 0
+        for x in range(-im.shape[0],im.shape[0]):
+            for y in range(0,im.shape[1]):
+              
+                if im[x,y][0] == 255 and im[x,y][1] == 255 and im[x,y][2] == 255:
+                    x = -im.shape[0]
+                    y+=1
+                    
+                else:
+                    im[x,y] = [0,0,0]
+                
+        cv2.imshow("couocu.png", im)
+        cv2.imwrite("uu.png", im)
+        #marche pas ca sarrete en plein milieu fais chier
+            
     def recup_lum(self):
 
         im = cv2.imread("yoyo.png")
@@ -145,11 +180,13 @@ class irl_yeux:
 
 
 yo = irl_yeux()
-yo.position_yeux()
-yo.transforme_image()
-yo.yeux()
-yo.contour()
-yo.recup_lum()
+#yo.position_yeux()
+#yo.transforme_image()
+#yo.yeux()
+#yo.contour()
+yo.no_bord_no_black()
+yo.no_bord_no_black_gauche()
+#yo.recup_lum()
 
 
 
