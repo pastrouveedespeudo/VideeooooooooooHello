@@ -1,7 +1,15 @@
 # VideeooooooooooHello
 
 
-#les bug
+#oups jcrois quun hexagone c pas + 1/2 du trait putin fais chier jtai refais sert toi des rayons et du coup
+
+#le centre donc ca sera c + nombrey chpas calme toi frere lhexgone on le fait en cm2
+
+#et si tu voulais que ce soit classe tutiliserai les coordonées polaires
+
+#cylindrique... jai crus sté un synonyme de polaire...fallait rajouté z... fallait rajouté z... 3/20
+
+#ca a calmé tout le monde 
 
 #tu reprends a chaque fois tes meme fonctions, alors yeux + paumettes ce soir connar
 
