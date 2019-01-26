@@ -1,19 +1,12 @@
 # VideeooooooooooHello
 
 
-#oups jcrois quun hexagone c pas + 1/2 du trait putin fais chier jtai refais sert toi des rayons et du coup
+#fais chier tu vas devoir faire une analyse spectrale, jcroyais que ca allait etre simple ca mais nan nan pas du tout 
 
-#le centre donc ca sera c + nombrey chpas calme toi frere lhexgone on le fait en cm2
+#personne n'a fait ca ou quoi bande de et les video pour etudier le son, tout d'abord il faut définir qu'est ce que c'est qu'un son
+#nik toi
 
-#et si tu voulais que ce soit classe tutiliserai les coordonées polaires
 
-#cylindrique... jai crus sté un synonyme de polaire...fallait rajouté z... fallait rajouté z... 3/20
-
-#ca a calmé tout le monde 
-
-#tu reprends a chaque fois tes meme fonctions, alors yeux + paumettes ce soir connar
-
-#et que ca marche ou pas t'en fou faut juste que theoriquement ca marche x) theoriquement ^^
 #faut trouver, en gros, l'oeil renvoie de la lumiere ouf et c ste lumiere qui te serviera de pts daxe
 
 #cluster paumette
