@@ -20,8 +20,22 @@ import time
 from PIL import Image
 from pylab import *
 
+
+
+LISTEX = [[0, 0],[0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,],[0,0,0,0,0,0,0],
+                 [0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]]
+
+
+LISTEY = [[0, 0],[0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,],[0,0,0,0,0,0,0],
+                 [0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]]
+
+
 class irl_yeux:
 
+
+
+
+    
     def position_yeux(self):
 
         self.i = 0
@@ -118,17 +132,18 @@ class irl_yeux:
     def geometrie(self):
         pass
         #carre = {cid:(x,y), td:(x, x:nombrex), tdh:(nombrex:y +nombrey), tdy:(nombrex,nombrey-nombrex)}
-        #hexagone ={1: (x,y),
-         #          2:(x,(x:nombrex)),
+        #octogone ={1: (x,y),
+        #           2:(x,(x:nombrex)),
          #          3:((x:nombrex+1/2*nombrex,y:1/2*nombrey)),
-         #          4:((x+nombrex+1/2*nombrex,y:1/2*nombrey+nombrey))
-         #          5:((x:nombrex, y+2*nombrey)),
-          #         6:((x, y:2*nombrey)),
-          #         7:((x:-1/2*nombrex, 2*nombrey:2*nombrey - 1/2*nombrey))
-         #          8:((-1/2*nombrex, 2*nombrey - 1/2*nombrey - nombrey))
-          #         9:((-1/2*nombrex:x, 1/2*nombrey:y))
-#                   }
-
+          #         4:((x+nombrex+1/2*nombrex,y:1/2*nombrey+nombrey))
+          #         5:((x:nombrex, y+2*nombrey)),
+         #          6:((x, y:2*nombrey)),
+        #           7:((x:-1/2*nombrex, 2*nombrey:2*nombrey - 1/2*nombrey))
+       #            8:((-1/2*nombrex, 2*nombrey - 1/2*nombrey - nombrey))
+      #             9:((-1/2*nombrex:x, 1/2*nombrey:y))
+     #              }
+    #    rectangle =
+        #le type y matte sa feuille et un hexagone ca la pas choqué...
 
     def no_bord_no_black(self):
         
@@ -190,13 +205,105 @@ class irl_yeux:
         #cv2.imshow("couocu.png", im)
 
 
+    def yeux(self):
+
+
+        im = cv2.imread("v2.png")
+        listex = [[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],
+                 [],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]]
+
+        listey = [[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],
+                 [],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]]
+
+
+
+    
+        c = 0
+        for x in range(im.shape[0]):
+            for y in range(im.shape[1]):
+
+                if im[x,y][0] == 0 and im[x,y][1] == 0 and im[x,y][2] == 255:
+                    listex[c].append(x)
+                    listey[c].append(y)
+                    
+
+            c+=1
+
+            
+        droite = ""
+        gauche = ""
+        haut = ""
+        bas =  ""
+        
+        try:
+            c = 0
+            for i in listex:
+                
+                for i in listex[c]:
+                    for j in LISTEX[c]:
+
+                        difference = i - j
+                        if difference > j:
+                            droite = True
+                        elif difference < j:
+                            gauche = True
+                c+=1
+   
+
+                
+                    
+        except:
+            pass
+               
+
+        
+    
+
+        
+        try:
+            c = 0
+            for i in listey:
+                print(listey[c], LISTEY[c])
+                for i in listey[c]:
+                    for j in LISTEY[c]:
+                        print(i-j)
+                        difference = i - j
+                        if difference > j:
+                            haut = True
+                        elif difference < j:
+                            bas = True
+                c+=1
+        except:
+            pass
+
+        
+        if droite == True:
+            print("chpas")
+        elif gauche ==True:
+            print("chplus soit verbale ouchpas ou intra personnell jpus")
+        elif bas == True:
+            print("imagine")
+        elif haut == True:
+            print("recherche active information")
 
 
 
 
+        LISTEX = listex
+        LISTEY listey
+        #ca rime a rien c trop moche jreflechis plus
+        #ca marche pas pour la premiere fois...
 
-#forme geo mtn mais va finir transformers avec la fille c un hexa et les autre carré donc
-        #y'aura dautre forme et si bien c pas juste 
+        #bon ben faire les bug et ouais ca me... c pas mon code
+        #c pas reflechis
+        #en meme temps mec comment veux tu que je reflechisse, je
+        #copie le code du mec, un truk que jaurai jamais pu faure
+        #et je le colle avecun peu de chance y'aura une erruer
+        #mtn les src emply
+        #empty source gray jles connais ^^
+        #essaie de re réflechir gros
+        
+
 yo = irl_yeux()
 #yo.position_yeux()
 #yo.transforme_image()
@@ -205,10 +312,7 @@ yo = irl_yeux()
 yo.no_bord_no_black()
 yo.no_bord_no_black_gauche()
 yo.recuperation_image()
-
-
-
-
+yo.yeux()
 
 
 
