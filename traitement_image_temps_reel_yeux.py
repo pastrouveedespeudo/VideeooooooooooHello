@@ -36,7 +36,7 @@ class irl_yeux:
         face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
         
-        img = cv2.imread('homme.jpg')
+        img = cv2.imread('femme.jpg')
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
         faces = face_cascade.detectMultiScale(gray, 1.3, 5)
         for (x,y,w,h) in faces:
@@ -54,15 +54,19 @@ class irl_yeux:
                 crop1 = roi_color[ey:ey+eh, ex:ex+ew]
                 
             
-      
+                crop2 = roi_color[ey+10:ey+eh-10, ex:ex+ew]
+
+        cv2.imshow("tt.png", crop2)
+        cv2.imwrite("tt.png", crop2)
         cv2.imwrite("yoy.png", crop)
-        cv2.imwrite("yoyo.png", crop1)
-        cv2.imwrite("yaya.png", crop1)
+        cv2.imwrite("yy.png", crop1)
+
+
 
     def transforme_image(self):
         
         
-        image_pts = cv2.imread("yaya.png", 0)
+        image_pts = cv2.imread("yoy.png", 0)
         edges = cv2.Canny(image_pts,100,200)
         plt.subplot(122),plt.imshow(edges,cmap = 'gray')
         plt.title('Edge Image'), plt.xticks([]), plt.yticks([])
@@ -70,16 +74,20 @@ class irl_yeux:
         cv2.imshow("ezeza", image_pts)
 
 
+
+
+
         
     def yeux(self):
 
   
-        im = cv2.imread("yaya.png")
+        im = cv2.imread("tt.png")
         for x in range(im.shape[0]):
             for y in range(im.shape[1]):
              
 
-                if im[x,y][0] == 255 or im[x,y][0] >= 150 and im[x,y][1] == 255 or im[x,y][1] >= 150 and im[x,y][1] <= 255 or im[x,y][2] >= 150:
+                if im[x,y][0] == 255 or im[x,y][0] >= 150 and im[x,y][1] == 255 or\
+                   im[x,y][1] >= 150 and im[x,y][1] == 255 or im[x,y][2] >= 150:
                     pass
                 else:
                     im[x,y] = [255,255,255]
@@ -104,6 +112,23 @@ class irl_yeux:
 
         
         show()
+       
+
+
+    def geometrie(self):
+        
+        carre = {cid:(x,y), td:(x, x:nombrex), tdh:(nombrex:y +nombrey), tdy:(nombrey:nombrex)}
+        hexagone ={1: (x,y),
+                   2:(x,x:nombrex),
+                   3:((x:nombrex+1/2*nombrex,y:1/2*nombrey)),
+                   4:((x+nombrex+1/2*nombrex,y:1/2*nombrey+nombrey))
+                   5:((x:nombrex, y+2*nombrey)),
+                   6:((x, y:2*nombrey)),
+                   7:((x:-1/2*nombrex, 2*nombrey:2*nombrey - 1/2*nombrey))
+                   8:((-1/2*nombrex, 2*nombrey - 1/2*nombrey - nombrey))
+                   9:((-1/2*nombrex:x, 1/2*nombrey:y))
+                   }
+
 
 
     def recup_lum(self):
@@ -129,20 +154,7 @@ yo.recup_lum()
 
 
 
-#contour permet davoir le pts lumineu en carré du coup juste a faire si x and x+1, y+1 x+2,y-2 ectt
-#retourne coordonée
 
-#MAIS ON PEUT PAS ENREGISTRER CE TRUK DE ou ca donne une image blanche
-
-#trouve comment extraire (on a un image pas totalement blanche (juste en haut) avec un ptit pts a l'inté...)
-
-#reesaie de faire si c-1:c+x == 255 oauis en gros les blanco davant quoi
-
-#on ajoute a la liste les prochaine valeur et des quya du blanco stop
-
-#ca ca marchait pas non plus ensuite fais comme pour la teté
-
-#ou faire l'extraction via le truk echographie mais chai pas comment on fait
 
 
 
