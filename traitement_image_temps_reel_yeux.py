@@ -128,7 +128,7 @@ class irl_yeux:
          #          8:((-1/2*nombrex, 2*nombrey - 1/2*nombrey - nombrey))
           #         9:((-1/2*nombrex:x, 1/2*nombrey:y))
 #                   }
-#syntaxe
+
 
     def no_bord_no_black(self):
         
@@ -142,43 +142,61 @@ class irl_yeux:
                     x = 0
                     break
                 else:
-                    im[x,y] = [0,0,0]
+                    im[x,y] = [255,255,255]
 
         cv2.imshow("couocu.png", im)
-        cv2.imwrite("uu.png", im)
+        cv2.imwrite("uuuuuu.png", im)
 
         
     def no_bord_no_black_gauche(self):
         im = cv2.imread("uu.png")
-
-        y = 0
-        for x in range(-im.shape[0],im.shape[0]):
-            for y in range(0,im.shape[1]):
-              
+        for y in range(im.shape[1]):
+            for x in range(im.shape[0]):
+               
                 if im[x,y][0] == 255 and im[x,y][1] == 255 and im[x,y][2] == 255:
-                    x = -im.shape[0]
-                    y+=1
-                    
+                 
+                    break
                 else:
-                    im[x,y] = [0,0,0]
-                
+                    im[x,y] = [255,255,255]
+
+
         cv2.imshow("couocu.png", im)
         cv2.imwrite("uu.png", im)
-        #marche pas ca sarrete en plein milieu fais chier
-            
-    def recup_lum(self):
+    #y'a un espace pas mis en blanc...
 
-        im = cv2.imread("yoyo.png")
-        liste = []
+
+    def recuperation_image(self):
+
+        im = cv2.imread("uu.png")
+        
+        a = im.shape[0]
+        b = im.shape[1]
+
+        nouvelle_image = np.zeros((a,b,3), np.uint8)
+        nouvelle_image[:,0:b//2] = (0,0,255)      
+        nouvelle_image[:,b//2:b] = (0,0,255)
+        cv2.imwrite("v.png", nouvelle_image)
+        cv2.imshow("v.png",nouvelle_image)
+        
         for x in range(im.shape[0]):
             for y in range(im.shape[1]):
-                if im[x,y][0] < 200 and im[x,y][1] < 200 and im[x,y][2] < 200:
-                    im[x,y] = [0,0,255]
+                if im[x,y][0] == 255 and im[x,y][1] == 255 and im[x,y][2] == 255:
+                    nouvelle_image[x,y] = [0,0,0]
+                
 
+        cv2.imwrite("v2.png", nouvelle_image)
+        cv2.imshow("v.png",nouvelle_image)
+       
         #cv2.imshow("couocu.png", im)
 
 
 
+
+
+
+
+#forme geo mtn mais va finir transformers avec la fille c un hexa et les autre carré donc
+        #y'aura dautre forme et si bien c pas juste 
 yo = irl_yeux()
 #yo.position_yeux()
 #yo.transforme_image()
@@ -186,7 +204,8 @@ yo = irl_yeux()
 #yo.contour()
 yo.no_bord_no_black()
 yo.no_bord_no_black_gauche()
-#yo.recup_lum()
+yo.recuperation_image()
+
 
 
 
